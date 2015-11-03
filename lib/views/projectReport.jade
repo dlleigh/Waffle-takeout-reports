@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1.
+        Waffle Boards
+    ul
+        each project, i in projectList
+            li
+                a(href="http://waffle.innovate.ibm.com/#{project.name}")= project.name
+                ul
+                    each source, j in project.sources
+                        li
+                            a(href="http://github.ibm.com/#{source.repoPath}")= source.repoPath

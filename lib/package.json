@@ -1,0 +1,15 @@
+{
+  "name": "projects-using-waffle",
+  "description": "List of projects using Waffle",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x",
+    "jade": "^1.11.0",
+    "mongodb": "^2.0.42",
+    "monk": "~1.0.1"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

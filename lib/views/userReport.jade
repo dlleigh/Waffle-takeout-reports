@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1.
+        Waffle Users
+    p The following is a list of current waffle users
+    ol
+        each user, i in userList
+            li #{user.github.email}, #{user.github.name}
